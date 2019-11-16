@@ -3,11 +3,12 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HelloWorld } from 'src/components/hello-world/hello-world.component'
+import { EventComponent } from 'src/components/event/event.component'
+
 @NgModule({
   declarations: [
     AppComponent,
- HelloWorld
+    EventComponent
   ],
   imports: [
     BrowserModule,
