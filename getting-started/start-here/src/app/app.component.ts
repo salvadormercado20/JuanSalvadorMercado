@@ -1,23 +1,16 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { HelloWorld } from 'src/components/hello-world/hello-world.component'
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
-
-export class AppComponent implements OnInit {
-  @ViewChild(HelloWorld ) child: HelloWorld ;
-
-  ngOnInit() {
-  }
-  counter = 0;
-
-  private increaseCounter(this) {
-    this.counter++;
-  }
-  private getHelloWorldCounterValue(){
- this.counter = this.child.getCounter();
-}
+export class AppComponent {
+  event: any =
+    {
+      time: "08:00",
+      subject: "Breakfast with Simon",
+      location: "Lounge Caffe",
+      description: "Discuss Q3 targets"
+    };
 }
